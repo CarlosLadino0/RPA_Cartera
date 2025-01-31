@@ -32,3 +32,7 @@ try:
     time.sleep(1)
 except Exception as e:
     print(f"Error al ingresar credenciales: {e}")
+
+    '''
+    Ellos agendaron una primera cita ayer pero como no pude estar, me dijeron que les enviara un correo hoy para re agendar la cita y hoy no contestaron
+    '''
