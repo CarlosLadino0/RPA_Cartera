@@ -10,7 +10,7 @@ import pytz
 import subprocess
 
 def procesar_emails_y_guardar_informe():
-    save_folder = "D:/Users/PC/Documents/CARTERA"
+    save_folder = "D:/Users/PC/Documents/CARTERA" # Ruta donde se guardará el informe (Cambiar según corresponda)
     os.makedirs(save_folder, exist_ok=True)
 
     try: 

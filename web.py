@@ -16,7 +16,8 @@ def iniciar_sesion():
         driver.set_page_load_timeout(40)
         driver.get(url)
 
-        usuario = "claudiaarbelaez"
+        # Usuario Softseguros (Cambiar según corresponda)
+        usuario = ""
         campo_usuario = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.NAME, "username"))
         )
@@ -24,7 +25,8 @@ def iniciar_sesion():
 
         time.sleep(1)
 
-        contrasena = "Correseguros*1"
+        # Contraseña Softseguros (Cambiar según corresponda)
+        contrasena = ""
         campo_contrasena = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.NAME, "password"))
         )
@@ -68,7 +70,8 @@ def iniciar_sesion():
         campo_correo = WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.XPATH, "//input[@placeholder='ejemplo@email.com; ejemplo2@email.com']"))
         )
-        campo_correo.send_keys("practicante@correseguros.co")
+        # Correo técnico (Cambiar según corresponda)
+        campo_correo.send_keys("")
 
         time.sleep(1)
 

@@ -5,7 +5,7 @@ import os
 
 def ejecutar_macro():
     print("Ejecutando Macro")
-    file_path = r'D:/Users/PC/Documents/CARTERA/PLANTILLA INFORME DE CARTERA.xlsm'
+    file_path = r'D:/Users/PC/Documents/CARTERA/PLANTILLA INFORME DE CARTERA.xlsm' # ruta del informe de cartera (Cambiar según corresponda)
     try:
         excel = win32.Dispatch('Excel.Application')
         excel.Visible = False
@@ -13,6 +13,7 @@ def ejecutar_macro():
 
         workbook = excel.Workbooks.Open(file_path)
         print("Archivo abierto")
+
 
         excel.Application.Run('Módulo1.ActualizarPlantilla')
         print("Macro ejecutada")
